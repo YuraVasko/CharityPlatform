@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CharityPlatform.Domain", "CharityPlatform.Domain\CharityPlatform.Domain.csproj", "{D37081F5-3917-4FC5-9EEC-A9E7CF1A0538}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CharityPlatform.Integration", "CharityPlatform.Integration\CharityPlatform.Integration.csproj", "{92A279A0-4213-4444-8E58-B8DF6CD7D63F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CharityPlatform.DAL", "CharityPlatform.DAL\CharityPlatform.DAL.csproj", "{C2DCA97F-9FAE-4834-BBC1-C45D07A7D81E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CharityPlatform.SharedKernel", "CharityPlatform.SharedKernel\CharityPlatform.SharedKernel.csproj", "{3FE6441A-53A9-4902-BC9B-5EB815F46133}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CharityPlatform.API", "CharityPlatform.API\CharityPlatform.API.csproj", "{5EFEA994-2E8F-45E5-8494-6706FFE46305}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CharityPlatform.LinqPay.Integration", "CharityPlatform.LinqPay.Integration\CharityPlatform.LinqPay.Integration.csproj", "{E4F5DD6E-3BE3-43BB-8CFF-3C8CA24C54DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D37081F5-3917-4FC5-9EEC-A9E7CF1A0538}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D37081F5-3917-4FC5-9EEC-A9E7CF1A0538}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D37081F5-3917-4FC5-9EEC-A9E7CF1A0538}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D37081F5-3917-4FC5-9EEC-A9E7CF1A0538}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92A279A0-4213-4444-8E58-B8DF6CD7D63F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92A279A0-4213-4444-8E58-B8DF6CD7D63F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92A279A0-4213-4444-8E58-B8DF6CD7D63F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92A279A0-4213-4444-8E58-B8DF6CD7D63F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2DCA97F-9FAE-4834-BBC1-C45D07A7D81E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2DCA97F-9FAE-4834-BBC1-C45D07A7D81E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2DCA97F-9FAE-4834-BBC1-C45D07A7D81E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2DCA97F-9FAE-4834-BBC1-C45D07A7D81E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FE6441A-53A9-4902-BC9B-5EB815F46133}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FE6441A-53A9-4902-BC9B-5EB815F46133}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FE6441A-53A9-4902-BC9B-5EB815F46133}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FE6441A-53A9-4902-BC9B-5EB815F46133}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EFEA994-2E8F-45E5-8494-6706FFE46305}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EFEA994-2E8F-45E5-8494-6706FFE46305}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EFEA994-2E8F-45E5-8494-6706FFE46305}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EFEA994-2E8F-45E5-8494-6706FFE46305}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4F5DD6E-3BE3-43BB-8CFF-3C8CA24C54DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4F5DD6E-3BE3-43BB-8CFF-3C8CA24C54DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4F5DD6E-3BE3-43BB-8CFF-3C8CA24C54DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4F5DD6E-3BE3-43BB-8CFF-3C8CA24C54DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A05762E-CA23-47CA-9073-787057360267}
+	EndGlobalSection
+EndGlobal

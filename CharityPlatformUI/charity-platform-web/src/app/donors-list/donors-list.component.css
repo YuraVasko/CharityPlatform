@@ -1,0 +1,34 @@
+.container {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: #ebf1f6;
+}
+
+.material-table{
+  width: 1200px;
+}
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+td,
+th {
+  width: 20%;
+}
+
+.donor-list-general {
+  width: 95%;
+}
+.actions{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.submit-btn{
+  background: #2b6ae0;
+  color: #ebf1f6;
+}

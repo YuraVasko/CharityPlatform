@@ -1,0 +1,53 @@
+<div class="container">
+  <div class="wrapper">
+    <div class="title-wrapper">
+      <h2 class="title">Create new organization</h2>
+    </div>
+    <form class="organization-register" [formGroup]="registerOrg" (ngSubmit)="register()">
+      <div class="org-inp">
+        <span class="input-title">Organization name:</span>
+        <mat-form-field appearance="fill" class="input-wrapper" style="margin-bottom: -1.25em">
+          <mat-label>Name</mat-label>
+          <input matInput formControlName="orgName">
+        </mat-form-field>
+      </div>
+      <div class="org-inp">
+        <span class="input-title">Organization description:</span>
+        <mat-form-field appearance="fill" class="input-wrapper" style="margin-bottom: -1.25em">
+          <mat-label>Description</mat-label>
+          <input matInput formControlName="orgDesc">
+        </mat-form-field>
+      </div>
+      <div class="org-inp">
+        <span class="input-title">Masters:</span>
+        <mat-form-field appearance="fill" style="margin-bottom: -1.25em">
+          <mat-label>Select Master</mat-label>
+          <mat-select formControlName="mastersSelect">
+            <mat-option *ngFor="let master of masters" [value]="master.value">
+              {{master.viewValue}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="org-inp">
+        <span class="input-title">Organizarion type:</span>
+        <mat-form-field appearance="fill" style="margin-bottom: -1.25em">
+          <mat-label>Select organizarion type</mat-label>
+          <mat-select formControlName="orgTypeSel">
+            <mat-option *ngFor="let org of orgType" [value]="org.value">
+              {{org.viewValue}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="btn-wrapper">
+        <mat-card-actions>
+          <button class="btn submit-btn link-btn" mat-button type="submit" [disabled] = "registerOrg.invalid">Create</button>
+        </mat-card-actions>
+        <mat-card-actions>
+          <button class="btn cancel-btn link-btn" mat-button type="reset" >Cancel</button>
+        </mat-card-actions>
+      </div>
+    </form>
+  </div>
+</div>

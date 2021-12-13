@@ -1,0 +1,55 @@
+<div class="container">
+    <form class="sign-up-form" [formGroup]="signUpForm" (ngSubmit) = "register()">
+
+        <mat-card class="example-card">
+            <mat-card-header>
+                <mat-card-title class="form-title">Welcome to charity platform. <br>Be a part of one big family.</mat-card-title>
+            </mat-card-header>
+            
+            <div class="names-wrapper">
+                <div class="example-container">
+                    <mat-form-field appearance="fill" class="input-wrapper">
+                        <mat-label>First name</mat-label>
+                        <input matInput formControlName = "firstName">
+                    </mat-form-field>
+                </div>
+            
+                <div class="example-container">
+                    <mat-form-field appearance="fill" class="input-wrapper">
+                        <mat-label>Last name</mat-label>
+                        <input formControlName = "lastName" matInput>
+                    </mat-form-field>
+                </div>
+
+            </div>
+            <div class="email-passw-wrapper">
+
+                <mat-card-content>
+                    <div class="example-container">
+                        <mat-form-field appearance="fill" class="input-wrapper">
+                            <mat-label>Enter your email</mat-label>
+                            <input matInput placeholder="pat@example.com" formControlName = "email" required >
+                            <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+                        </mat-form-field>
+                    </div>
+            
+                    <div class="example-container">
+                        <mat-form-field appearance="fill" class="input-wrapper">
+                            <mat-label>Enter your password</mat-label>
+                            <input matInput [type]="hide ? 'password' : 'text'" formControlName = "password">
+                            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                                [attr.aria-pressed]="hide">
+                                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                            </button>
+                        </mat-form-field>
+                    </div>
+                </mat-card-content>
+            </div>
+        
+            <mat-card-actions class="btn-wrapper">
+                <button class="submit-btn" mat-button type="submit" [disabled] = "signUpForm.invalid">Register now!</button>
+                <a class="redirect"  [routerLink]="[ '/log-in' ]">Already have an account? Log in!</a>
+            </mat-card-actions>
+        </mat-card>
+    </form>
+</div>

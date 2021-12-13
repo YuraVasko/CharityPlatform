@@ -1,0 +1,66 @@
+<div class="container">
+  <div class="wrapper">
+    <div class="title-wrapper">
+      <h2 class="title">Create new project</h2>
+    </div>
+    <form class="proj-register" [formGroup]="registerProj" (ngSubmit)='register()'>
+      <div class="reg-inp">
+        <span class="input-title">Project title:</span>
+        <mat-form-field appearance="fill" class="input-wrapper" style="margin-bottom: -1.25em">
+          <mat-label>Title</mat-label>
+          <input matInput formControlName="projTitle">
+        </mat-form-field>
+      </div>
+      <div class="reg-inp">
+        <span class="input-title">Project description:</span>
+        <mat-form-field appearance="fill" class="input-wrapper" style="margin-bottom: -1.25em">
+          <mat-label>Description</mat-label>
+          <input matInput formControlName="projDesc">
+        </mat-form-field>
+      </div>
+      <div class="reg-inp">
+        <span class="input-title">Organization:</span>
+        <mat-form-field appearance="fill" style="margin-bottom: -1.25em">
+          <mat-label>Select Organization</mat-label>
+          <mat-select formControlName="orgSelect">
+            <mat-option *ngFor="let org of orgType" [value]="org.value">
+              {{org.viewValue}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <div class="reg-inp">
+        <span class="input-title">Donation goal:</span>
+        <mat-form-field appearance="fill" class="input-wrapper" style="margin-bottom: -1.25em">
+          <mat-label>Donation goal</mat-label>
+          <input matInput formControlName="donationGoal" type="number">
+        </mat-form-field>
+      </div>
+
+      <div class="reg-inp">
+        <span class="input-title">Start date:</span>
+        <mat-form-field appearance="fill" class="input-wrapper" style="margin-bottom: -1.25em">
+          <mat-label>Description</mat-label>
+          <input matInput formControlName="startDate" type="date">
+        </mat-form-field>
+      </div>
+
+      <div class="reg-inp">
+        <span class="input-title">End date:</span>
+        <mat-form-field appearance="fill" class="input-wrapper" style="margin-bottom: -1.25em">
+          <mat-label>Description</mat-label>
+          <input matInput formControlName="endDate" type="date">
+        </mat-form-field>
+      </div>
+      <div class="btn-wrapper">
+        <mat-card-actions>
+          <button class="btn submit-btn link-btn" mat-button type="submit" [disabled] = "registerProj.invalid">Create</button>
+        </mat-card-actions>
+        <mat-card-actions>
+          <button class="btn submit-btn link-btn" mat-button type="reset" >Cancel</button>
+        </mat-card-actions>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<div mat-dialog-content>
+  <p>Enter amount of donation</p>
+  <mat-form-field appearance="fill">
+    <mat-label>UAH</mat-label>
+    <input matInput [(ngModel)]="donationAmount">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancel</button>
+  <button mat-button [mat-dialog-close]="donationAmount" cdkFocusInitial>Donate</button>
+</div>
